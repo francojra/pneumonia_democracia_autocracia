@@ -1,0 +1,1 @@
+# pneumonia_paises_capitalistas_comunistas
