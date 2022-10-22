@@ -56,6 +56,10 @@ pne3 <- pne %>%
   filter(Entity %in% c("United States", "China")) %>%
   view()
 
+pne4 <- pne %>%
+  filter(Entity %in% c("United States", "China", "Brazil")) %>%
+  view()
+
 # Gráficos ---------------------------------------------------------------------------------------------------------------------------------
 
 c4a("safe", 6)
@@ -104,3 +108,16 @@ ggplot(pne3, aes(x = Year, y = taxa_mortes_pneu,
         axis.text = element_text(color = "black", size = 15),
         legend.text = element_text(size = 12))
 
+c4a("dark2", 3)
+
+ggplot(pne4, aes(x = Year, y = taxa_mortes_pneu,
+                 group = Entity, col = Entity)) +
+  geom_line(size = 2.2) +
+  scale_color_manual(values = c("#1B9E77", "#D95F02", "#7570B3"), 
+                     labels = c("Brasil", "China", "Estados Unidos")) +
+  labs(x = "Tempo (anos)", y = "Taxa de mortes por pneumonia (%)",
+       color = "Países") +
+  theme_hc() +
+  theme(axis.title = element_text(size = 18),
+        axis.text = element_text(color = "black", size = 15),
+        legend.text = element_text(size = 12))
