@@ -20,5 +20,13 @@
 
 # Carregar pacotes -------------------------------------------------------------------------------------------------------------------------
 
+library(tidyverse)
+library(cols4all)
+library(hrbrthemes)
+library(ggthemes)
 
+# Carregar dados ---------------------------------------------------------------------------------------------------------------------------
 
+pne <- read.csv("pneumonia-death-rates-age-standardized.csv")
+view(pne)
+names(pne)
