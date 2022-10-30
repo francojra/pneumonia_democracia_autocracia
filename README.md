@@ -1,4 +1,4 @@
-# Pneumonia em países capitalistas e comunistas
+# Pneumonia em países democratas e autocratas
 
 ### Autoria do script: Jeanne Franco
 ### Data: 21/10/22 
