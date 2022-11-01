@@ -113,7 +113,7 @@ ggplot(pne4, aes(x = Year, y = taxa_mortes_pneu,
   geom_line(size = 2) +
   scale_color_manual(values = c('#1B9E77', '#999999','#E69F00'), 
                      labels = c("Brasil", "China", "Estados Unidos")) +
-  labs(x = "Tempo (anos)", y = "Taxa de mortes por pneumonia (%)",
+  labs(x = "Tempo (anos)", y = "Taxa de mortes por pneumonia",
        color = "Países") +
   theme_light() +
   theme(axis.title = element_text(size = 18),
